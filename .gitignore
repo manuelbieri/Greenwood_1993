@@ -1,2 +1,6 @@
 *.log
+*.asv
 resources/
+models/BaseLevel*/
+models/+*/
+.DS_Store
