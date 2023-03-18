@@ -1,6 +1,7 @@
 *.log
 *.asv
-resources/
+resources/*
 models/BaseLevel*/
 models/+*/
 .DS_Store
+resources/project/*
