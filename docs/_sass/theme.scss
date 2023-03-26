@@ -1,0 +1,28 @@
+
+.main{
+  margin-top: 80px;
+  white-space: pre;
+  line-height: 0.3em;
+}
+
+.output {
+  width: fit-content;
+}
+
+code {
+  font-size: 10px !important;
+  color: black !important;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  margin: auto !important;
+}
+
+.text-content {
+  text-align: justify;
+}
+
+@import "bootstrap/bootstrap";

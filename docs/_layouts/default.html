@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {%- include header.html -%}
+    {% seo %}
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [{
+                "@type": "ListItem",
+                "position": 1,
+                "name": "{{ page.title }}",
+                "item": "{{ site.url }}{{ page.url }}"
+            }]
+        }
+    </script>
+</head>
+
+<body>
+<div class="d-flex flex-column min-vh-100">
+
+    {%- include navbar.html -%}
+
+    <div class="container-fluid main">
+        {{ content }}
+    </div>
+
+    {%- include footer.html -%}
+
+</div>
+
+    {%- include scripts.html -%}
+
+</body>
+</html>
