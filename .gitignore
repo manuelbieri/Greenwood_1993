@@ -1,4 +1,4 @@
-*.log
+models/*.log
 *.asv
 resources/*
 models/BaseLevel*/
