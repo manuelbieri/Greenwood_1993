@@ -3,29 +3,36 @@ title: Home
 layout: default
 ---
 
-<h3 class="h3 mt-3">Output</h3>
-<hr class="border-2 border-top border-dark">
-<div class="bg-light overflow-x-visible output">
-    <code>
-        {% include_relative _includes/logs/BaseLevelInclude.log %}
-    </code>
-</div>
-
-<h3 class="h3 mt-3">Impulse Response Functions</h3>
-<hr class="border-2 border-top border-dark">
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-3 col-sm-8">
-            <img src="assets/images/BaseLevelInclude_IRF_eh1.jpeg" class="img-fluid" alt="BaseLevelInclude_IRF_eh1.jpeg">
+<div class="accordion accordion-flush" id="accordion">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="outputOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Dynare Output
+            </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="outputOne" data-bs-parent="#accordion">
+            <div class="accordion-body">
+                <div class="bg-light output">
+                    <code>
+                        {% include_relative _includes/logs/BaseLevelInclude.log %}
+                    </code>
+                </div>
+            </div>
         </div>
-        <div class="col-md-3 col-sm-8">
-            <img src="assets/images/BaseLevelInclude_IRF_eh2.jpeg" class="img-fluid" alt="BaseLevelInclude_IRF_eh2.jpeg">
-        </div>
-        <div class="col-md-3 col-sm-8">
-            <img src="assets/images/BaseLevelInclude_IRF_em1.jpeg" class="img-fluid" alt="BaseLevelInclude_IRF_em1.jpeg">
-        </div>
-        <div class="col-md-3 col-sm-8">
-            <img src="assets/images/BaseLevelInclude_IRF_em2.jpeg" class="img-fluid" alt="BaseLevelInclude_IRF_em2.jpeg">
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Impulse Response Functions
+            </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <img src="assets/images/BaseLevelInclude_IRF_eh1.jpeg" class="img-fluid" alt="BaseLevelInclude_IRF_eh1.jpeg">
+                <img src="assets/images/BaseLevelInclude_IRF_eh2.jpeg" class="img-fluid" alt="BaseLevelInclude_IRF_eh2.jpeg">
+                <img src="assets/images/BaseLevelInclude_IRF_em1.jpeg" class="img-fluid" alt="BaseLevelInclude_IRF_em1.jpeg">
+                <img src="assets/images/BaseLevelInclude_IRF_em2.jpeg" class="img-fluid" alt="BaseLevelInclude_IRF_em2.jpeg">
+            </div>
         </div>
     </div>
 </div>

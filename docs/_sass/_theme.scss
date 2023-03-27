@@ -1,18 +1,23 @@
 .main{
   margin-top: 80px;
   white-space: pre;
-  line-height: 0.3em;
+  width: 90% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 .output {
-  width: fit-content;
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 code {
   font-size: 10px !important;
   color: black !important;
-  margin-left: 5px;
-  margin-right: 5px;
+  line-height: 0.01em !important;
 }
 
 .navbar-brand {
