@@ -22,7 +22,7 @@ title: Greenwood et al. 1993
 email: mail@manuelbieri.ch
 description: >- # this means to ignore newlines until "baseurl:"
   This website provides the model and dynare output for Greenwood et al. 1993.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/Greenwood_1993" # the subpath of your site, e.g. /blog
 url: "https://manuelbieri.ch" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  manuelbieri
 
