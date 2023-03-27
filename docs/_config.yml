@@ -26,7 +26,6 @@ baseurl: "/Greenwood_1993" # the subpath of your site, e.g. /blog
 url: "https://manuelbieri.ch" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  manuelbieri
 
-source: app
 include: ["_includes/logs", "*.logs"]
 
 author:
@@ -39,7 +38,7 @@ plugins:
   - jekyll-seo-tag
 
 sass:
-  sass_dir: ./docs/_sass
+  sass_dir: _sass
   
 # Exclude from processing.
 # The following items will not be processed, by default.
