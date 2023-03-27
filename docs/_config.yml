@@ -27,6 +27,7 @@ url: "https://manuelbieri.ch" # the base hostname & protocol for your site, e.g.
 github_username:  manuelbieri
 
 include: ["_includes/logs", "*.logs", "_sass", "docs/_sass"]
+source: ""
 
 author:
   name: Manuel Bieri
