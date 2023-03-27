@@ -26,8 +26,7 @@ baseurl: "/Greenwood_1993" # the subpath of your site, e.g. /blog
 url: "https://manuelbieri.ch" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  manuelbieri
 
-include: ["_includes/logs", "*.logs", "_sass", "docs/_sass"]
-source: ""
+include: ["_includes/logs", "*.logs"]
 
 author:
   name: Manuel Bieri
