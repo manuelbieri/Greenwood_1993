@@ -1,6 +1,5 @@
 .main{
   margin-top: 80px;
-  white-space: pre;
   width: 90% !important;
   margin-left: auto !important;
   margin-right: auto !important;
@@ -15,6 +14,7 @@
 }
 
 code {
+  white-space: pre;
   font-size: 10px !important;
   color: black !important;
   line-height: 0.01em !important;
@@ -27,6 +27,8 @@ code {
 
 .text-content {
   text-align: justify;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 @import "bootstrap/bootstrap";

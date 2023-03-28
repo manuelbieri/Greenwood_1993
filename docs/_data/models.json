@@ -1,0 +1,8 @@
+[
+  {
+    "id": "BaseLevelInclude",
+    "description": "Standardmodel with standard parameter values.",
+    "title": "Standardmodel (Levels)",
+    "link": "https://github.com/manuelbieri/Greenwood_1993/blob/main/models/BaseLevelInclude.mod"
+  }
+]
