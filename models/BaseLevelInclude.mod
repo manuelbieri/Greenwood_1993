@@ -5,7 +5,7 @@
 // Putting Home Economics Into Macroeconomics.
 // ------------------------------------------------------ 
 // Manuel Bieri (manuel.bieri@students.unibe.ch)
-// Michael Wagner (michael.wagner@students.unibe.ch)
+// Michael Wagner (michael.wagner1@students.unibe.ch)
 // Department of Economics 
 // University of Bern
 // 2023
@@ -18,6 +18,8 @@
 // Comment here which version of the model you coded, i.e.: 
 // with adjustment cost but no time varying depreciation rate
 // ------------------------------------------------------
+
+@#define modelnr = 0
 
 @#includepath "Hooks/Base"
 
@@ -49,7 +51,8 @@ model;
     [name = 'Home Output']
     ch = kh(-1)^eta*(zh*hh)^(1-eta);
 
-    [name = 'Aggregate Consumption']
+    [name = 'Total Consumption']
+    //C = cm^a+(1-a)*ch^(1-a);
     C = (a*cm^e+(1-a)*ch^e)^(1/e);
     
     [name = 'Leisure']
@@ -83,10 +86,9 @@ end;
 // Initial values
 initval;
     C=Cs;
-    @#include "BaseInitval.mod"
+    @#include "BaseLevelInitval.mod"
 end;
 
 @#include "BaseRun.mod"
 
-// Launch solving procedure
-stoch_simul(order=1, irf=80, hp_filter=1600,periods=1000) C,cm,ch,k,km,kh,x,xm,xh,l,hm,hh,zm,zh,r,w,y,T;
+@#include "BaseWrite.mod"

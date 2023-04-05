@@ -20,6 +20,12 @@ xs      = xms+xhs;
 cms     = ys-xs;
 chs     = khs^eta*(zhs*hhs)^(1-eta);
 a       = (eta^(-1)*chs^(-e)*khs*cms^(e-1)*(lambda/beta-1+delta_h)+1)^(-1);
-Cs      = (a*cms^e+(1-a)*chs^e)^(1/e);
+
+@#if modelnr==1
+    Cs  = cms^a+chs^(1-a);
+@#else
+    Cs  = (a*cms^e+(1-a)*chs^e)^(1/e);
+@#endif
+
 b       = ((1-a)*(1-eta)*Cs^(-e)*chs^e*hhs^(-1)*ls+1)^(-1);
 Ts      = ws*tau_h*hms+rs*tau_k*kms-delta_m*tau_k*kms;
