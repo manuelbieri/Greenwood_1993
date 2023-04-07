@@ -1,5 +1,4 @@
-# Greenwood_1993
-Implements the RBC model of Greenwood et al. (1993)
+# Greenwood et al. (1993) - Putting Home into Macroeconomics
 
 ## Dependencies
 - Matlab (>=2021b)
