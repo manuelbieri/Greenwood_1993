@@ -100,10 +100,11 @@ parameters a, b, e
 beta $\beta$, delta_m $\delta_M$, delta_h $\delta_H$, eta $\eta$,
 lambda $\lambda$, rho_h $\rho_H$, rho_m $\rho_M$, tau_k $\tau_k$,
 tau_h $\tau_h$, theta $\theta$, sigma_m $\sigma_M$, sigma_h $\sigma_H$, 
-gamma $\gamma$;
+gamma $\gamma$, psi $\psi$;
 
 
 // Assign parameter values to apriori set parameters
+// Values as specified in the base model (overriden in specific models)
 e       = 2/3;
 delta_m = 0.0235;
 delta_h = delta_m;
@@ -112,9 +113,9 @@ gamma   = 2/3;
 lambda  = 1.004674;
 rho_h   = 0.95;
 rho_m   = rho_h;
-sigma_m = 0.07;
+theta   = 0.2944;
+sigma_m = 0.007/(1-theta);
 sigma_h = sigma_m;
 tau_k   = 0.70;
 tau_h   = 0.25;
-theta   = 0.2944;
 psi     = -0.5017;
