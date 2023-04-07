@@ -9,8 +9,6 @@ addpath /Applications/Dynare/5.3/matlab
 
 CleanUp;
 dynare Base1_Level
-copyfile Base1_Level.log ../docs/_includes/logs/Base1_Level.log
-
 
 %% Run Standardmodel 2 (deflated + levels)
 % Model with increased incentive to substitute between home and market
