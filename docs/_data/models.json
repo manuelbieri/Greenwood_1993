@@ -1,7 +1,25 @@
 [
   {
-    "id": "BaseLevelInclude",
+    "id": "Base1_Level",
     "description": "Standardmodel with standard parameter values.",
+    "title": "Standardmodel (Levels)",
+    "link": "https://github.com/manuelbieri/Greenwood_1993/blob/main/models/BaseLevelInclude.mod"
+  },
+  {
+    "id": "Base2_Level",
+    "description": "XXX",
+    "title": "Standardmodel (Levels)",
+    "link": "https://github.com/manuelbieri/Greenwood_1993/blob/main/models/BaseLevelInclude.mod"
+  },
+  {
+    "id": "MinimalHomeProduction_Level",
+    "description": "XXX",
+    "title": "Standardmodel (Levels)",
+    "link": "https://github.com/manuelbieri/Greenwood_1993/blob/main/models/BaseLevelInclude.mod"
+  },
+  {
+    "id": "GeneralHomeProduction_Level",
+    "description": "XXX",
     "title": "Standardmodel (Levels)",
     "link": "https://github.com/manuelbieri/Greenwood_1993/blob/main/models/BaseLevelInclude.mod"
   }
