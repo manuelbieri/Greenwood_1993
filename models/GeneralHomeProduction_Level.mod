@@ -23,12 +23,15 @@
 @#includepath "Hooks"
 @#includepath "Hooks/Initval"
 
+// set model type
+@#define general_home_production
+
+
 // import variables
 @#include "Variables_Parameters.mod"
 
 
 // import steady state values
-@#define general_home_production
 @#include "SteadyState.mod"
 
 

@@ -22,6 +22,10 @@
 @#includepath "Hooks"
 @#includepath "Hooks/Initval"
 
+// set model type
+@#define minimal_home_production
+
+
 // import variables
 @#include "Variables_Parameters.mod"
 // override standard parameter values
@@ -29,7 +33,6 @@ e       = 0;
 
 
 // import steady state values
-@#define minimal_home_production
 @#include "SteadyState.mod"
 
 

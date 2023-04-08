@@ -60,7 +60,6 @@ model;
     y = km(-1)^(theta)*(zm*hm)^(1-theta);
     
     [name = '(49) Total Consumption']
-    //C = cm^a+(1-a)*ch^(1-a);
     C = (a*cm^e+(1-a)*ch^e)^(1/e);
 
     [name = '(50) Leisure']
