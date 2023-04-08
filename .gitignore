@@ -1,12 +1,16 @@
-models/*.log
-*.asv
-resources/*
 .DS_Store
+*.asv
+
+resources/*
 resources/project/*.xml
 
+models/*.log
 models/+*/
 models/Base1_Level/
 models/Base2_level/
 models/GeneralHomeProduction_Level/
 models/MinimalHomeProduction_Level/
 models/Base1_Log/
+models/Base2_log/
+models/GeneralHomeProduction_Log/
+models/MinimalHomeProduction_log/
