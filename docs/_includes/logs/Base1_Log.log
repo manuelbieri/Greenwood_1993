@@ -78,7 +78,7 @@ for 4 forward-looking variable(s)
 The rank condition is verified.
 
 MODEL_DIAGNOSTICS:  No obvious problems with this mod-file were detected.
-                                          Information about Base1_Log (dynamic model)
+                                          Information about Base1_log (dynamic model)
 
 The following variables appear with a lag and are therefore states:
 km(-1)
