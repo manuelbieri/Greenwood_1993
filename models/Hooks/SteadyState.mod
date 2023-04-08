@@ -47,7 +47,7 @@ a     = (eta^(-1)*chs^(-e)*khs*cms^(e-1)*(lambda/beta-1+delta_h)+1)^(-1);       
 
 @#ifdef minimal_home_production
 Cs    = cms^a*chs^(1-a);                                                            //(146)
-display("Replace (94) with (146) for steady state calculation")
+display("Replace (94) with (147) for steady state calculation")
 @#else
 Cs    = (a*cms^e+(1-a)*chs^e)^(1/e);                                                //(94)
 @#endif
