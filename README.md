@@ -4,7 +4,7 @@
 - Matlab (>=2021b)
 - Dynare (>=5.3)
 
-Otherwise, the code might (partly) not work.
+Otherwise, the code might (partly) not work. Additionally, the code and scripts are tested on macOS 13.3.
 
 ## Run Dynare-Code
 ```shell

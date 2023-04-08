@@ -23,6 +23,10 @@
 @#includepath "Hooks"
 @#includepath "Hooks/Initval"
 
+//preamble
+@#include "preamble.mod"
+
+
 // import variables
 @#include "Variables_Parameters.mod"
 // override standard parameter values

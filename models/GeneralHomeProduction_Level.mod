@@ -23,6 +23,10 @@
 @#includepath "Hooks"
 @#includepath "Hooks/Initval"
 
+//preamble
+@#include "preamble.mod"
+
+
 // set model type
 @#define general_home_production
 
