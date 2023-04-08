@@ -3,48 +3,48 @@
     "id": "Base1_Level",
     "description": "Model with increased willingness to substitute between home and market",
     "title": "Standardmodel 1 (Levels)",
-    "link": "https://github.com/manuelbieri/Greenwood_1993/blob/main/models/BaseLevelInclude.mod"
+    "link": "https://github.com/manuelbieri/Greenwood_1993/blob/main/models/Base1_Level.mod"
   },
   {
     "id": "Base2_Level",
     "description": "Model with increased incentive to substitute between home and market",
     "title": "Standardmodel 2 (Levels)",
-    "link": "https://github.com/manuelbieri/Greenwood_1993/blob/main/models/BaseLevelInclude.mod"
+    "link": "https://github.com/manuelbieri/Greenwood_1993/blob/main/models/Base2_Level.mod"
   },
   {
     "id": "MinimalHomeProduction_Level",
     "description": "Model with home production minimized",
     "title": "Minimal Home Production (Levels)",
-    "link": "https://github.com/manuelbieri/Greenwood_1993/blob/main/models/BaseLevelInclude.mod"
+    "link": "https://github.com/manuelbieri/Greenwood_1993/blob/main/models/MinimalHomeProduction_Level.mod"
   },
   {
     "id": "GeneralHomeProduction_Level",
     "description": "Model with a more general home production function and highly correlated technology shocks",
     "title": "General Home Production (Levels)",
-    "link": "https://github.com/manuelbieri/Greenwood_1993/blob/main/models/BaseLevelInclude.mod"
+    "link": "https://github.com/manuelbieri/Greenwood_1993/blob/main/models/GeneralHomeProduction_Level.mod"
   },
   {
     "id": "Base1_Log",
     "description": "Model with increased willingness to substitute between home and market",
     "title": "Standardmodel 1 (Logs)",
-    "link": "https://github.com/manuelbieri/Greenwood_1993/blob/main/models/BaseLevelInclude.mod"
+    "link": "https://github.com/manuelbieri/Greenwood_1993/blob/main/models/Base1_Log.mod"
   },
   {
     "id": "Base2_Log",
     "description": "Model with increased incentive to substitute between home and market",
     "title": "Standardmodel 2 (Logs)",
-    "link": "https://github.com/manuelbieri/Greenwood_1993/blob/main/models/BaseLevelInclude.mod"
+    "link": "https://github.com/manuelbieri/Greenwood_1993/blob/main/models/Base2_Log.mod"
   },
   {
     "id": "MinimalHomeProduction_Log",
     "description": "Model with home production minimized",
     "title": "Minimal Home Production (Logs)",
-    "link": "https://github.com/manuelbieri/Greenwood_1993/blob/main/models/BaseLevelInclude.mod"
+    "link": "https://github.com/manuelbieri/Greenwood_1993/blob/main/models/MinimalHomeProduction_Log.mod"
   },
   {
     "id": "GeneralHomeProduction_Log",
     "description": "Model with a more general home production function and highly correlated technology shocks",
     "title": "General Home Production (Logs)",
-    "link": "https://github.com/manuelbieri/Greenwood_1993/blob/main/models/BaseLevelInclude.mod"
+    "link": "https://github.com/manuelbieri/Greenwood_1993/blob/main/models/GeneralHomeProduction_Log.mod"
   }
 ]
