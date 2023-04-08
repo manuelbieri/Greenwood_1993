@@ -1,7 +1,10 @@
 docs_files=docs/assets/files
 
-for i in "Base1_Level" "Base2_Level" "MinimalHomeProduction_Level" "GeneralHomeProduction_Level"
+for i in "Base1_Level" "Base2_Level" "MinimalHomeProduction_Level" "GeneralHomeProduction_Level" "Base1_Log"
 do
+	# create output directory if necessary
+	mkdir -p $docs_files/${i}
+
 	## create images of the IRFs
 	for j in "em1" "em2" "eh1" "eh2"
 	do
@@ -18,7 +21,6 @@ do
 
 	## copy files into docs-directory
 	# copy pdf-files
-	mkdir -p $docs_files/${i}
 	mv models/${i}/latex/*.pdf $docs_files/${i}
 	# copy log-files
 	cp models/${i}.log docs/_includes/logs

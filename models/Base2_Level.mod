@@ -39,7 +39,7 @@ gamma   = 0;
 
 
 // Equations of the Model
-// Numbering of the equations is refering to P&P solution
+// Numbering of the equations is referring to P&P solution
 model;
     [name = '(41) Resource Constraint']
     y = cm + x;
@@ -103,5 +103,5 @@ end;
 @#include "Run.mod"
 
 
-// write models and defintions to tex-files
+// write models and definitions to tex-files
 @#include "Write.mod"

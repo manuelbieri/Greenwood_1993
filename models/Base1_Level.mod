@@ -35,7 +35,7 @@
 
 
 // Equations of the Model
-// Numbering of the equations is refering to P&P solution
+// Numbering of the equations is referring to P&P solution
 model;
     [name = '(41) Resource Constraint']
     y = cm + x;
@@ -60,7 +60,6 @@ model;
     y = km(-1)^(theta)*(zm*hm)^(1-theta);
     
     [name = '(49) Total Consumption']
-    //C = cm^a+(1-a)*ch^(1-a);
     C = (a*cm^e+(1-a)*ch^e)^(1/e);
 
     [name = '(50) Leisure']
@@ -100,5 +99,5 @@ end;
 @#include "Run.mod"
 
 
-// write models and defintions to tex-files
+// write models and definitions to tex-files
 @#include "Write.mod"

@@ -10,6 +10,12 @@ addpath /Applications/Dynare/5.3/matlab
 CleanUp;
 dynare Base1_Level
 
+%% Run Standardmodel 1 (deflated + logs)
+% Model with increased willingness to substitute between home and market
+
+CleanUp;
+dynare Base1_Log
+
 %% Run Standardmodel 2 (deflated + levels)
 % Model with increased incentive to substitute between home and market
 

@@ -33,14 +33,14 @@
 
 // import variables
 @#include "Variables_Parameters.mod"
-
+gamma = 0.99;
 
 // import steady state values
 @#include "SteadyState.mod"
 
 
 // Equations of the Model
-// Numbering of the equations is refering to P&P solution
+// Numbering of the equations is referring to P&P solution
 model;
     [name = '(41) Resource Constraint']
     y = cm + x;
@@ -49,11 +49,11 @@ model;
     [name = '(150) Household FOC w.r.t. hh']
     (1-a)*b*(1-eta)*C^(-e)*ch^(e-psi)*hh^(psi-1)*zh^psi = (1-b)*l^(-1);
     [name = '(43)Household FOC w.r.t. hm']
-    a*b*(1-tau_h)*(1-theta)*C^(-e)*cm^(e-1)*y*hm^(-1)   = (1-b)*l^(-1);
+    a*b*(1-tau_h)*(1-theta)*C^(-e)*cm^(e-1)*y*hm^(-1) = (1-b)*l^(-1);
     [name = '(151) Household FOC w.r.t. kh']
     beta*C(+1)^(-e)*(a*(1-delta_h)*cm(+1)^(e-1)+(1-a)*eta*ch(+1)^(e-psi)*kh^(psi-1)) = a*lambda*C^(-e)*cm^(e-1);
     [name = '(45) Household FOC w.r.t. km']
-    beta*C(+1)^(-e)*cm(+1)^(e-1)*(r(+1)*(1-tau_k)+delta_m*tau_k+1-delta_m)  = lambda*C^(-e)*cm^(e-1);
+    beta*C(+1)^(-e)*cm(+1)^(e-1)*(r(+1)*(1-tau_k)+delta_m*tau_k+1-delta_m) = lambda*C^(-e)*cm^(e-1);
     
     // FOCs of the firm
     [name = '(46) Firm FOC w.r.t. km']
@@ -104,5 +104,5 @@ end;
 @#include "Run.mod"
 
 
-// write models and defintions to tex-files
+// write models and definitions to tex-files
 @#include "Write.mod"
