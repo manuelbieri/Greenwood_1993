@@ -1,8 +1,9 @@
+%% Add Functions and Dynare to environment
+addpath Functions/
+AddDynare % Add path to Dynare as argument if necessary
+
 %% Clear environment
 CleanUp;
-
-%% Add Dynare to environment (adjust path if necessary)
-addpath /Applications/Dynare/5.3/matlab
 
 %% Run Standardmodel 1 (deflated + levels)
 % Model with increased willingness to substitute between home and market
@@ -53,3 +54,8 @@ dynare GeneralHomeProduction_Level
 
 CleanUp;
 dynare GeneralHomeProduction_Log
+
+%% Replicate Table
+
+GenerateTable
+
