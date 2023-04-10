@@ -24,6 +24,7 @@
 @#includepath "Hooks/Initval"
 
 //preamble
+display("Model with a more general home production function and highly correlated technology shocks (levels)")
 @#include "preamble.mod"
 
 

@@ -24,6 +24,7 @@
 @#includepath "Hooks/Initval"
 
 //preamble
+display("Model with increased incentive to substitute between home and market (logs)")
 @#include "preamble.mod"
 
 // import variables

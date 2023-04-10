@@ -23,6 +23,7 @@
 @#includepath "Hooks/Initval"
 
 //preamble
+display("Model with home production minimized (logs)")
 @#include "preamble.mod"
 
 
