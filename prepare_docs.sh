@@ -24,4 +24,6 @@ do
 	mv models/${i}/latex/*.pdf $docs_files/${i}
 	# copy log-files
 	cp models/${i}.log docs/_includes/logs
+	# copy replication of "The Effects of Adding Home Production to a Real Business Cycle Model"
+	cp models/Replication_Effects_Home_RBC.csv docs/data
 done

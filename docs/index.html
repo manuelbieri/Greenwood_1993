@@ -8,11 +8,18 @@ layout: default
         <button class="nav-link active" id="nav-tab-home" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
             Home
         </button>
+        {% for type in site.data.types %}
+        <button class="nav-link" id="nav-tab-{{ type.name }}" data-bs-toggle="tab" data-bs-target="#nav-{{ type.name }}" type="button" role="tab" aria-controls="nav-{{ type.name }}">
+            {{ type.title }}
+        </button>
+        {% endfor %}
+        <!--
         {% for model in site.data.models %}
             <button class="nav-link" id="nav-tab-{{ model.id }}" data-bs-toggle="tab" data-bs-target="#nav-{{ model.id }}" type="button" role="tab" aria-controls="nav-{{ model.id }}">
                 {{ model.title }}
             </button>
         {% endfor %}
+        -->
     </div>
 </nav>
 <div class="tab-content" id="nav-tabContent">
@@ -22,8 +29,33 @@ layout: default
             <br><br>
             Find the code and further details on <a href="https://github.com/manuelbieri/Greenwood_1993">GitHub <i class="bi bi-box-arrow-up-right"></i></a>.
         </p>
+        <br>
+        <div class="table-responsive">
+            <table class="table table-striped table-hover table-bordered">
+                <caption>Replication of <i>The Effects of Adding Home Production to a Real Business Cycle Model</i></caption>
+                {% for row in site.data.Replication_Effects_Home_RBC %}
+                {% if forloop.first %}
+                <tr>
+                    {% for pair in row %}
+                    <th>{{ pair[0] }}</th>
+                    {% endfor %}
+                </tr>
+                {% endif %}
+                {% tablerow pair in row %}
+                {{ pair[1] }}
+                {% endtablerow %}
+                {% endfor %}
+            </table>
+        </div>
     </div>
+    {% for type in site.data.types %}
+    <div class="tab-pane fade" id="nav-{{ type.name }}" role="tabpanel" aria-labelledby="nav-tab-{{ type.name }}">
+        {% include models.html type=type.name %}
+    </div>
+    {% endfor %}
+    <!--
     {% for model in site.data.models %}
+
         <div class="tab-pane fade" id="nav-{{ model.id }}" role="tabpanel" aria-labelledby="nav-tab-{{ model.id }}">
             <p class="text-content">
                 {{ model.description }}
@@ -97,4 +129,5 @@ layout: default
             </div>
         </div>
     {% endfor %}
+    -->
 </div>

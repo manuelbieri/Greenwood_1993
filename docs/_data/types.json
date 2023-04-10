@@ -1,0 +1,10 @@
+[
+  {
+    "name":"levels",
+    "title": "Level Models"
+  },
+  {
+    "name":"logs",
+    "title": "Log-transformed Models"
+  }
+]

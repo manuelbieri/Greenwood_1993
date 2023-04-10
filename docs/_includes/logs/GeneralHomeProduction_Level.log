@@ -9,6 +9,8 @@ Processing outputs ...
 done
 Preprocessing completed.
 
+    "Model with a more general home production function and highly correlated technology shocks (levels)"
+
     "The numbering of the equations is referenced to the P&P solutions."
 
     "Replace (84) with (161) for steady state calculation"
@@ -227,4 +229,4 @@ y                91.98              4.82             96.80
 T                93.07              4.05             97.12
 Note: numbers do not add up to 100 due to non-zero correlation of simulated shocks in small samples
 
-Total computing time : 0h00m05s
+Total computing time : 0h00m06s
