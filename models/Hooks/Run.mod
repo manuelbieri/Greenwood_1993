@@ -1,8 +1,8 @@
 // Declaring the shocks
 shocks;
-var em; stderr sigma_m; // Market technology shock
-var eh; stderr sigma_h; // Home technology shock
-corr em,eh=gamma;       // Shock correlation
+var em; stderr sigma_m;  // Market innovation
+var eh; stderr sigma_h;  // Home innovation
+corr em, eh=gamma;       // Innovation correlation
 end;
 
 // Checking for the steady state
@@ -10,6 +10,7 @@ resid;
 steady;
 check;
 
+// Display model diagnostics
 model_diagnostics;
 model_info;
 

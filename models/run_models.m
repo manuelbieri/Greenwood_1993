@@ -56,6 +56,6 @@ CleanUp;
 dynare GeneralHomeProduction_Log
 
 %% Replicate Table
-%   All data are quarterly, logged, and detrended using the Hodrick-Prescott filter.
+% All data are quarterly, logged, and detrended using the Hodrick-Prescott filter.
 
 GenerateTable

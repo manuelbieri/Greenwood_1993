@@ -45,7 +45,7 @@ model;
     // FOCS of the household
     [name = '(115) Household FOC w.r.t. hh']
     (1-a)*b*(1-eta)*exp(-C*e+ch*e-hh) = (1-b)*exp(-l);
-    [name = '(116)Household FOC w.r.t. hm']
+    [name = '(116) Household FOC w.r.t. hm']
     a*b*(1-tau_h)*(1-theta)*exp(-C*e+cm*(e-1)+y-hm) = (1-b)*exp(-l);
     [name = '(117) Household FOC w.r.t. kh']
     beta*exp(-C(+1)*e)*(a*(1-delta_h)*exp(cm(+1)*(e-1))+(1-a)*eta*exp(ch(+1)*e-kh)) = a*lambda*exp(-C*e+cm*(e-1));
