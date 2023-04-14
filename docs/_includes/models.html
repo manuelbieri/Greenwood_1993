@@ -1,5 +1,5 @@
 <nav>
-  <div class="nav nav-tabs" id="nav-tab-{{ page.type }}" role="tablist">
+  <div class="nav nav-tabs mt-3" id="nav-tab-{{ page.type }}" role="tablist">
     {% for model in site.data.models %}
     {% if model.type == include.type %}
     <button class={% if model.id contains 1 %}"nav-link active"{% else %}"nav-link"{% endif %}"nav-link" id="nav-tab-{{ model.id }}" data-bs-toggle="tab" data-bs-target="#nav-{{ model.id }}" type="button" role="tab" aria-controls="nav-{{ model.id }}">

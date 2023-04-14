@@ -2,30 +2,31 @@
 title: Home
 layout: default
 ---
-
+<p class="text-content">
+    This website collects the relevant materials to the implementation of "Putting Home into Macroeconomics" by Greenwood et al. (1993).
+    <br><br>
+    Find the code and further details on <a href="https://github.com/manuelbieri/Greenwood_1993">GitHub <i class="bi bi-box-arrow-up-right"></i></a>.
+</p>
 <nav>
     <div class="nav nav-tabs" id="nav-tab" role="tablist">
-        <button class="nav-link active" id="nav-tab-home" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
-            Home
-        </button>
         {% for type in site.data.types %}
-        <button class="nav-link" id="nav-tab-{{ type.name }}" data-bs-toggle="tab" data-bs-target="#nav-{{ type.name }}" type="button" role="tab" aria-controls="nav-{{ type.name }}">
+        <button class={% if type.name == "logs" %}"nav-link active"{% else %}"nav-link"{% endif %} id="nav-tab-{{ type.name }}" data-bs-toggle="tab" data-bs-target="#nav-{{ type.name }}" type="button" role="tab" aria-controls="nav-{{ type.name }}">
             {{ type.title }}
         </button>
         {% endfor %}
     </div>
 </nav>
 <div class="tab-content" id="nav-tabContent">
-    <div class="tab-pane fade show active mt-2" id="nav-home" role="tabpanel" aria-labelledby="nav-tab-home">
-        <p class="text-content">
-            This website collects the relevant materials to the implementation of "Putting Home into Macroeconomics" by Greenwood et al. (1993).
-            <br><br>
-            Find the code and further details on <a href="https://github.com/manuelbieri/Greenwood_1993">GitHub <i class="bi bi-box-arrow-up-right"></i></a>.
-        </p>
-        <br>
-        <div class="table-responsive">
+    {% for type in site.data.types %}
+    <div class={% if type.name == "logs" %}"tab-pane fade show active"{% else %}"tab-pane fade"{% endif %} id="nav-{{ type.name }}" role="tabpanel" aria-labelledby="nav-tab-{{ type.name }}">
+        {% if type.name=="logs" %}
+        <div class="table-responsive mt-3">
             <table class="table table-striped table-hover table-bordered">
-                <caption>Replication of <i>The Effects of Adding Home Production to a Real Business Cycle Model</i></caption>
+                <caption>
+                    <b>Replication of <i>The Effects of Adding Home Production to a Real Business Cycle Model</i></b><br>
+                    * Ratios of standard deviations<br>
+                    ** Correlations
+                </caption>
                 {% for row in site.data.Replication_Effects_Home_RBC %}
                 {% if forloop.first %}
                 <tr>
@@ -40,9 +41,7 @@ layout: default
                 {% endfor %}
             </table>
         </div>
-    </div>
-    {% for type in site.data.types %}
-    <div class="tab-pane fade mt-2" id="nav-{{ type.name }}" role="tabpanel" aria-labelledby="nav-tab-{{ type.name }}">
+        {% endif %}
         {% include models.html type=type.name %}
     </div>
     {% endfor %}
