@@ -56,6 +56,16 @@ CleanUp;
 dynare GeneralHomeProduction_Log
 
 %% Replicate Table
-% All data are quarterly, logged, and detrended using the Hodrick-Prescott filter.
+% All data are quarterly, logged, and detrended using the Hodrick-Prescott 
+% filter.
 
-GenerateTable
+table = GenerateTable;
+display(table)
+display(table.Properties.Description)
+copyfile Replication_Effects_Home_RBC.csv ../docs/_data/
+
+%% Generate IRF Plot
+% Plot containing the IRFs for output, total consumption, total investment
+% and hours worked.
+
+GenerateIRFPlot;
