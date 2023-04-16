@@ -39,7 +39,8 @@ layout: default
                 <caption>
                     <b>Replication of <i>The Effects of Adding Home Production to a Real Business Cycle Model</i></b><br>
                     * Ratios of standard deviations<br>
-                    ** Correlations
+                    ** Correlations<br>
+                    *** U.S. Time Series, 1947-1987
                 </caption>
                 {% assign i = 0 %}
                 {% for row in site.data.Replication_Effects_Home_RBC %}
@@ -53,9 +54,9 @@ layout: default
                 {% endif %}
                 <tr>
                     {% if i == 0 %}
-                    <td>U.S. Time Series (1947-1987)</td>
+                    <td>Data***</td>
                     {% else %}
-                    <td>Model {{i}}</td>
+                    <td>Model&nbsp;{{i}}</td>
                     {% endif %}
                     {% for pair in row %}
                     <td>
@@ -64,9 +65,6 @@ layout: default
                     {% endfor %}
                     {% assign i = i | plus: 1 %}
                 </tr>
-<!--                {% tablerow pair in row %}
-                {{ pair[1] }}
-                {% endtablerow %}-->
                 {% endfor %}
             </table>
         </div>
