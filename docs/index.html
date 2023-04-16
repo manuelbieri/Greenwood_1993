@@ -41,17 +41,32 @@ layout: default
                     * Ratios of standard deviations<br>
                     ** Correlations
                 </caption>
+                {% assign i = 0 %}
                 {% for row in site.data.Replication_Effects_Home_RBC %}
                 {% if forloop.first %}
                 <tr>
+                    <th></th>
                     {% for pair in row %}
                     <th>{{ pair[0] }}</th>
                     {% endfor %}
                 </tr>
                 {% endif %}
-                {% tablerow pair in row %}
+                <tr>
+                    {% if i == 0 %}
+                    <td>U.S. Time Series (1947-1987)</td>
+                    {% else %}
+                    <td>Model {{i}}</td>
+                    {% endif %}
+                    {% for pair in row %}
+                    <td>
+                        {{ pair[1] }}
+                    </td>
+                    {% endfor %}
+                    {% assign i = i | plus: 1 %}
+                </tr>
+<!--                {% tablerow pair in row %}
                 {{ pair[1] }}
-                {% endtablerow %}
+                {% endtablerow %}-->
                 {% endfor %}
             </table>
         </div>
