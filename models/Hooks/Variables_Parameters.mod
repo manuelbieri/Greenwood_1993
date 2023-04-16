@@ -29,12 +29,24 @@
 //      in the market
 // ------------------------------------------------------
 
-var C, cm $c_M$, ch $c_H$,
-l, hm $h_M$, hh $h_H$,
-k, km $k_M$, kh $k_H$,
-x, xm $x_M$, xh $x_H$,
-r, T, w, y,
-zm $z_M$, zh $z_H$;
+var C (long_name='Total consumption'),
+cm $c_M$ (long_name='Market consumption'), 
+ch $c_H$ (long_name='Home consumption'),
+l (long_name='Leisure'),
+hm $h_M$ (long_name='Market hours'),
+hh $h_H$ (long_name='Home hours'),
+k (long_name='Total capital'),
+km $k_M$ (long_name='Market capital'),
+kh $k_H$ (long_name='Home capital'),
+x (long_name='Total investment'),
+xm $x_M$ (long_name='Market investment'),
+xh $x_H$ (long_name='Home investment'),
+r (long_name='Rental rate'),
+T (long_name='Lump sum transfer'), 
+w (long_name='Wage'), 
+y (long_name='Output'),
+zm $z_M$ (long_name='Market technology'), 
+zh $z_H$ (long_name='Home technology');
 
 
 // ------------------------------------------------------
@@ -44,7 +56,8 @@ zm $z_M$, zh $z_H$;
 // em:  Innovations in the market
 // ------------------------------------------------------
 
-varexo eh $\epsilon_H$, em $\epsilon_M$;
+varexo eh $\epsilon_H$ (long_name='Home innovation'),
+em $\epsilon_M$ (long_name='Market innovation');
 
 
 // ------------------------------------------------------
@@ -96,11 +109,23 @@ varexo eh $\epsilon_H$, em $\epsilon_M$;
 //          market
 // ------------------------------------------------------
 
-parameters a, b, e
-beta $\beta$, delta_m $\delta_M$, delta_h $\delta_H$, eta $\eta$,
-lambda $\lambda$, rho_h $\rho_H$, rho_m $\rho_M$, tau_k $\tau_k$,
-tau_h $\tau_h$, theta $\theta$, sigma_m $\sigma_M$, sigma_h $\sigma_H$, 
-gamma $\gamma$, psi $\psi$;
+parameters a (long_name='Share of market consumption'), 
+b (long_name='Weight factor of consumption vis-a-vis leisure'), 
+e  (long_name='Willingness to substitute between kinds of consumption'),
+beta $\beta$ (long_name='Discount factor'),
+delta_m $\delta_M$ (long_name='Depreciation rate on business capital'),
+delta_h $\delta_H$ (long_name='Depreciation rate on household capital'),
+eta $\eta$ (long_name='Capital share in the home'),
+lambda $\lambda$ (long_name='Growth rate of endogenous variables'),
+rho_h $\rho_H$ (long_name='Persistence of market technology shock'),
+rho_m $\rho_M$ (long_name='Persistence of home technology shock'),
+tau_k $\tau_k$ (long_name='Tax rate on capital income'),
+tau_h $\tau_h$ (long_name='Tax rate on labour income'),
+theta $\theta$ (long_name='Capital share in the market'),
+sigma_m $\sigma_M$ (long_name='Standard deviation of innovations in the market'),
+sigma_h $\sigma_H$ (long_name='Standard deviation of innovations in the household'), 
+gamma $\gamma$ (long_name='Incentive to move activity between home and market'),
+psi $\psi$ (long_name='Willingness to substitute between capital and time');
 
 
 // Assign parameter values to apriori set parameters

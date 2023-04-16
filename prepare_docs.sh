@@ -16,7 +16,7 @@ do
 	cd models/${i}/latex || exit
 	# convert tex-files into pdfs
 	pdflatex dynamic.tex
-	pdflatex "\documentclass{article}\usepackage{longtable}\usepackage{booktabs}\begin{document}\input{${i}_latex_definitions}\input{${i}_latex_parameters}\end{document}"${i}
+	pdflatex "\documentclass{article}\usepackage[a4paper,margin=1in,landscape]{geometry}\usepackage{longtable}\usepackage{booktabs}\begin{document}\input{${i}_latex_definitions}\input{${i}_latex_parameters}\end{document}"${i}
 	cd ../../../
 
 	## copy files into docs-directory
