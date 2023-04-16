@@ -5,55 +5,56 @@ AddDynare % Add path to Dynare as argument if necessary
 %% Clear environment
 CleanUp;
 
-%% Run Standardmodel 1 (deflated + levels)
-% Model with increased willingness to substitute between home and market
-
-CleanUp;
-dynare Base1_Level
-
-%% Run Standardmodel 1 (deflated + logs)
-% Model with increased willingness to substitute between home and market
-
-CleanUp;
-dynare Base1_log
-
-%% Run Standardmodel 2 (deflated + levels)
-% Model with increased incentive to substitute between home and market
-
-CleanUp;
-dynare Base2_level
-
-%% Run Standardmodel 2 (deflated + logs)
-% Model with increased incentive to substitute between home and market
-
-CleanUp;
-dynare Base2_log
-
-%% Run Minimal Home Production (deflated + levels)
+%% Run Model 1 (deflated + levels)
 % Model with home production minimized
 
 CleanUp;
-dynare MinimalHomeProduction_Level
+dynare Model1_level
 
-%% Run Minimal Home Production (deflated + logs)
+%% Run Model 1 (deflated + logs)
 % Model with home production minimized
 
 CleanUp;
-dynare MinimalHomeProduction_log
 
-%% Run General Home Production (deflated + levels)
+dynare Model1_log
+
+%% Run Model 2 (deflated + levels)
+% Model with increased willingness to substitute between home and market
+
+CleanUp;
+dynare Model2_level
+
+%% Run Model 2 (deflated + logs)
+% Model with increased willingness to substitute between home and market
+
+CleanUp;
+dynare Model2_log
+
+%% Run Model 3 (deflated + levels)
+% Model with increased incentive to substitute between home and market
+
+CleanUp;
+dynare Model3_level
+
+%% Run Model 3 (deflated + logs)
+% Model with increased incentive to substitute between home and market
+
+CleanUp;
+dynare Model3_log
+
+%% Run Model 4 (deflated + levels)
 % Model with a more general home production function and 
 % highly correlated technology shocks
 
 CleanUp;
-dynare GeneralHomeProduction_Level
+dynare Model4_Level
 
-%% Run General Home Production (deflated + logs)
+%% Run Model 4 (deflated + logs)
 % Model with a more general home production function and 
 % highly correlated technology shocks
 
 CleanUp;
-dynare GeneralHomeProduction_Log
+dynare Model4_Log
 
 %% Replicate Table
 % All data are quarterly, logged, and detrended using the Hodrick-Prescott 

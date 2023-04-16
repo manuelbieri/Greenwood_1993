@@ -5,13 +5,13 @@ function GenerateIRFPlot
 CleanUp;
 
 % Retrieve the IRFs from the models
-dynare Base1_log
+dynare Model1_log
 irf1 = evalin('caller','oo_.irfs'); % irf of dynare output from workspace
-dynare Base2_log
+dynare Model2_log
 irf2 = evalin('caller','oo_.irfs'); % irf of dynare output from workspace
-dynare MinimalHomeProduction_log
+dynare Model3_log
 irf3 = evalin('caller','oo_.irfs'); % irf of dynare output from workspace
-dynare GeneralHomeProduction_Log
+dynare Model4_Log
 irf4 = evalin('caller','oo_.irfs'); % irf of dynare output from workspace
 
 

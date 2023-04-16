@@ -105,6 +105,7 @@ gamma $\gamma$, psi $\psi$;
 
 // Assign parameter values to apriori set parameters
 // Values as specified in the base model (overriden in specific models)
+beta    = 0.9898;
 e       = 2/3;
 delta_m = 0.0235;
 delta_h = delta_m;

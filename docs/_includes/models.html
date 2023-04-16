@@ -13,10 +13,10 @@
   {% for model in site.data.models %}
   {% if model.type == include.type %}
   <div class={% if model.id contains 1 %}"tab-pane fade show active"{% else %}"tab-pane fade"{% endif %} id="nav-{{ model.id }}" role="tabpanel" aria-labelledby="nav-tab-{{ model.id }}">
-    <p class="text-content">
+    <!--<p class="text-content">
       {{ model.description }}
-    </p>
-    <div class="accordion accordion-flush mb-5" id="accordion-{{ model.id }}">
+    </p>-->
+    <div class="accordion accordion-flush mt-3 mb-5" id="accordion-{{ model.id }}">
       <div class="accordion-item">
         <h2 class="accordion-header" id="output-one-{{ model.id }}">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-one-{{ model.id }}" aria-expanded="true" aria-controls="collapse-one-{{ model.id }}">

@@ -7,23 +7,23 @@ CleanUp;
 % Init data table
 data = zeros(4, 8);
 
+% Model with home production minimized
+dynare Model1_log
+oo_ = evalin('caller','oo_'); % retrieve dynare output from workspace
+data = SaveMoments(data, 1, oo_);
+
 % Model with increased willingness to substitute between home and market
-dynare Base1_log
+dynare Model2_log
 oo_ = evalin('caller','oo_'); % retrieve dynare output from workspace
 data = SaveMoments(data, 2, oo_);
 
 % Model with increased incentive to substitute between home and market
-dynare Base2_log
+dynare Model3_log
 oo_ = evalin('caller','oo_'); % retrieve dynare output from workspace
 data = SaveMoments(data, 3, oo_);
 
-% Model with home production minimized
-dynare MinimalHomeProduction_log
-oo_ = evalin('caller','oo_'); % retrieve dynare output from workspace
-data = SaveMoments(data, 1, oo_);
-
 % Model with a more general home production function and highly correlated technology shocks
-dynare GeneralHomeProduction_Log
+dynare Model4_Log
 oo_ = evalin('caller','oo_'); % retrieve dynare output from workspace
 data = SaveMoments(data, 4, oo_);
 
