@@ -16,6 +16,15 @@ The numbering of the models is replicated from the original paper:
 Otherwise, the code might (partly) not work. Additionally, the code and scripts are tested on macOS 13.3.
 
 ## Run Dynare-Code
+
+### From Matlab Interface
+
+1. Open ```run_models.m``` and set `project_path/models` as working directory
+2. Run the first and second section
+    - Note: You may need to adjust the path to Dynare
+3. Run the sections containing the models, you wish to simulate
+
+### Command Line
 ```shell
 cd models
 /Applications/MATLAB_R2021b.app/bin/matlab -nodesktop -nosplash -r "run_models"

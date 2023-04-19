@@ -63,7 +63,6 @@ dynare Model4_Log
 table = GenerateTable;
 display(table)
 display(table.Properties.Description)
-copyfile Replication_Effects_Home_RBC.csv ../docs/_data/
 
 %% Generate IRF Plot
 % Plot containing the IRFs for output, total consumption, total investment
