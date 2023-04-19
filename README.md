@@ -12,12 +12,13 @@ The numbering of the models is replicated from the original paper:
 ## Dependencies
 - Matlab (>=2021b)
 - Dynare (>=5.3)
+- Jekyll (4+), for documentation only
 
 Otherwise, the code might (partly) not work. Additionally, the code and scripts are tested on macOS 13.3.
 
 ## Run Dynare-Code
 
-### From Matlab Interface
+### Matlab Interface
 
 1. Open ```run_models.m``` and set `project_path/models` as working directory
 2. Run the first and second section
@@ -35,4 +36,5 @@ Note: You may need to adjust the path to matlab.
 ```shell
 /bin/zsh prepare_docs.sh
 ```
-
+After running this shell-file, the docs-directory will contain a webpage with the latest outputs, which can be served with
+Jekyll. Make sure to run all models before generating the documentation, in order to mirror the latest changes.
