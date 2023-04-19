@@ -1,4 +1,5 @@
 %% Add Functions and Dynare to environment
+% Make sure the working directory is set to: project_path/models
 addpath Functions/
 AddDynare % Add path to Dynare as argument if necessary
 
