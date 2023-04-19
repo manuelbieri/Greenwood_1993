@@ -12,7 +12,7 @@ The numbering of the models is replicated from the original paper:
 ## Dependencies
 - Matlab (>=2021b)
 - Dynare (>=5.3)
-- Jekyll (4+), for documentation only
+- Jekyll (>=4.2), for documentation only
 
 Otherwise, the code might (partly) not work. Additionally, the code and scripts are tested on macOS 13.3.
 
