@@ -9,6 +9,11 @@ The numbering of the models is replicated from the original paper:
 - Model 3: Model with increased incentive to substitute between home and market
 - Model 4: Model with a more general home production function and highly correlated technology shocks
 
+Additional models (not included in Greenwood et al., 1993):
+
+- Model 2a: Adjusts Model 2 according to the suggestions of Greenwood et al. (1993) to increase the standard deviation of the home technology shock
+- Model 4a: Adjusts Model 4 to score a more appropriate correlation between home and business investments
+
 ## Dependencies
 - Matlab (>=2021b)
 - Dynare (>=5.3)

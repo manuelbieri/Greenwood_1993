@@ -43,18 +43,31 @@
     "link": "https://github.com/manuelbieri/Greenwood_1993/blob/main/models/Base1_Log.mod"
   },
   {
+    "id": "Model2a_Log",
+    "type": "logs",
+    "description": "Adjusted model 2",
+    "title": "Model 2a",
+    "link": "https://github.com/manuelbieri/Greenwood_1993/blob/main/models/Base1_Log.mod"
+  },
+  {
     "id": "Model3_Log",
     "type": "logs",
     "description": "Model with increased incentive to substitute between home and market",
     "title": "Model 3",
     "link": "https://github.com/manuelbieri/Greenwood_1993/blob/main/models/Base2_Log.mod"
   },
-
   {
     "id": "Model4_Log",
     "type": "logs",
     "description": "Model with a more general home production function and highly correlated technology shocks",
     "title": "Model 4",
+    "link": "https://github.com/manuelbieri/Greenwood_1993/blob/main/models/GeneralHomeProduction_Log.mod"
+  },
+  {
+    "id": "Model4a_Log",
+    "type": "logs",
+    "description": "Adjusted model 4",
+    "title": "Model 4a",
     "link": "https://github.com/manuelbieri/Greenwood_1993/blob/main/models/GeneralHomeProduction_Log.mod"
   }
 ]

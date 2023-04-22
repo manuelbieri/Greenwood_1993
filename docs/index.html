@@ -43,6 +43,7 @@ layout: default
                     *** U.S. Time Series, 1947-1987
                 </caption>
                 {% assign i = 0 %}
+                {% assign name = "0,1,2,2a,3,4,4a" | split:',' %}
                 {% for row in site.data.Replication_Effects_Home_RBC %}
                 {% if forloop.first %}
                 <tr>
@@ -56,14 +57,14 @@ layout: default
                     {% if i == 0 %}
                     <td>Data***</td>
                     {% else %}
-                    <td>Model&nbsp;{{i}}</td>
+                    <td>Model&nbsp;{{name[i]}}</td>
                     {% endif %}
+                    {% assign i = i | plus: 1 %}
                     {% for pair in row %}
                     <td>
                         {{ pair[1] }}
                     </td>
                     {% endfor %}
-                    {% assign i = i | plus: 1 %}
                 </tr>
                 {% endfor %}
             </table>

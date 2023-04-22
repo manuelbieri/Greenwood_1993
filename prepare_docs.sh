@@ -1,6 +1,6 @@
 docs_files=docs/assets/files
 
-for i in "Model1_Level" "Model2_Level" "Model3_Level" "Model4_Level" "Model1_Log" "Model2_Log" "Model3_Log" "Model4_Log"
+for i in "Model1_Level" "Model2_Level" "Model3_Level" "Model4_Level" "Model1_Log" "Model2_Log" "Model2a_Log" "Model3_Log" "Model4_Log" "Model4a_Log"
 do
 	# create output directory if necessary
 	mkdir -p $docs_files/${i}
