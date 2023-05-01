@@ -57,15 +57,6 @@ dynare Model4_Level
 CleanUp;
 dynare Model4_Log
 
-
-%% Experimental models
-
-CleanUp;
-dynare Model2a_Log
-display(oo_.var(11, 16)/(sqrt(oo_.var(11, 11)*oo_.var(16, 16))))
-
-
-
 %% Replicate Table
 % All data are quarterly, logged, and detrended using the Hodrick-Prescott 
 % filter.

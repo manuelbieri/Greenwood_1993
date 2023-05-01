@@ -17,8 +17,10 @@ irf4 = evalin('caller','oo_.irfs'); % irf of dynare output from workspace
 
 for j=1:2
     clf;
+    t = tiledlayout('flow','TileSpacing','compact');
     for i=1:4 % loop over different irfs (total consumption, output,...)
-    subplot(2,2,i)
+    nexttile
+    %subplot(2,2,i)
     % set title of subplot
     switch i
     case 1
@@ -63,11 +65,19 @@ for j=1:2
                 plot(irf.y_em);
             end
         end
+        ytickformat('%.3f')
+        ax = gca;
+        ax.YAxis.Exponent = 0;
     end
     % set subplot legend
-    legend("Model 1", "Model 2", "Model 3", "Model 4");
     hold off
     end
+
+    % add legend
+    leg = legend("Model 1", "Model 2", "Model 3", "Model 4", Location="north");
+    leg.Title.String = 'Legend';
+    leg.Layout.Tile = 'east';
+
     % save plot to image
     switch j
     case 1
