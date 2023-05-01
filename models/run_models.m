@@ -57,7 +57,7 @@ dynare Model4_Level
 CleanUp;
 dynare Model4_Log
 
-%% Replicate Table
+%% Replicate Table (including models 2a and 4a)
 % All data are quarterly, logged, and detrended using the Hodrick-Prescott 
 % filter.
 
@@ -65,7 +65,7 @@ table = GenerateTable;
 display(table)
 display(table.Properties.Description)
 
-%% Generate IRF Plot
+%% Generate IRF Plot (without models 2a and 4a)
 % Plot containing the IRFs for output, total consumption, total investment
 % and hours worked.
 

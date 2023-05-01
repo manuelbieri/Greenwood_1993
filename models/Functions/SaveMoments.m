@@ -14,29 +14,29 @@ assert(exist('oo_','var'))
 if ~exist('digits','var'), digits=2; end
 
 % percentage standard deviation
-table(row,1) = round(sqrt(oo_.var(17, 17))*100, digits);
+table(row,1) = round(GetStandardDeviation(oo_, 17)*100, digits);
 
 % ratios of standard deviations (sd)
 % sd(x)/sd(y)
-table(row,2) = round(sqrt(oo_.var(7, 7))/sqrt(oo_.var(17, 17)), digits);
+table(row,2) = round(GetStandardDeviation(oo_, 7)/GetStandardDeviation(oo_, 17), digits);
 
 % sd(cm)/sd(y)
-table(row,3) = round(sqrt(oo_.var(2, 2))/sqrt(oo_.var(17, 17)), digits);
+table(row,3) = round(GetStandardDeviation(oo_, 2)/GetStandardDeviation(oo_, 17), digits);
 
 % sd(hm)/sd(y)
-table(row,4) = round(sqrt(oo_.var(11, 11))/sqrt(oo_.var(17, 17)), digits);
+table(row,4) = round(GetStandardDeviation(oo_, 11)/GetStandardDeviation(oo_, 17), digits);
 
 % sd(w)/sd(y)
-table(row,5) = round(sqrt(oo_.var(16, 16))/sqrt(oo_.var(17, 17)), digits);
+table(row,5) = round(GetStandardDeviation(oo_, 16)/GetStandardDeviation(oo_, 17), digits);
 
 % sd(hm)/sd(w)
-table(row,6) = round(sqrt(oo_.var(11, 11))/sqrt(oo_.var(16, 16)), digits);
+table(row,6) = round(GetStandardDeviation(oo_, 11)/GetStandardDeviation(oo_, 16), digits);
 
 % Correlations
 % corr(hm, w)
-table(row,7) = round(oo_.var(11, 16)/(sqrt(oo_.var(11, 11))*sqrt(oo_.var(16, 16))), digits);
+table(row,7) = round(GetStandardDeviation(oo_, 11, 16)^2/(GetStandardDeviation(oo_, 11)*GetStandardDeviation(oo_, 16)), digits);
 % corr(xm, xh)
-table(row,8) = round(oo_.var(8, 9)/(sqrt(oo_.var(8, 8))*sqrt(oo_.var(9, 9))), digits);
+table(row,8) = round(GetStandardDeviation(oo_, 8, 9)^2/(GetStandardDeviation(oo_, 8)*GetStandardDeviation(oo_, 9)), digits);
 
 % Return table
 clc;
