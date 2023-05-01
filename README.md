@@ -12,6 +12,7 @@ Dynare outputs on [manuelbieri.ch/Greenwood_1993/](https://manuelbieri.ch/Greenw
 
 ## Models
 
+
 The numbering of the models is replicated from the original paper:
 
 - Model 1: Model with home production minimized
