@@ -1,6 +1,6 @@
 # Greenwood et al. (1993) - Putting Home into Macroeconomics
 
-This repository replicates the models by Greenwood et al. (1993) - Putting Home into Macroeconomics. You can find the complete
+This repository replicates the models by Greenwood et al. (1993) - Putting Home Economics into Macroeconomics. You can find the complete
 Dynare outputs on [manuelbieri.ch/Greenwood_1993/](https://manuelbieri.ch/Greenwood_1993/).
 
 ## Contents
