@@ -14,9 +14,11 @@
 // ------------------------------------------------------
 // Notes:
 //
-// Model 4 (log): 
+// Model 4a (log):
 // Model with a more general home production function and
 // highly correlated technology shocks
+// Additionally: Higher willingness to substitute between
+// home hours and home capital
 // ------------------------------------------------------
 
 // include the paths to the mod-files
