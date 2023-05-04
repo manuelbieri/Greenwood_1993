@@ -12,7 +12,6 @@ Dynare outputs on [manuelbieri.ch/Greenwood_1993/](https://manuelbieri.ch/Greenw
 
 ## Models
 
-
 The numbering of the models is replicated from the original paper:
 
 - Model 1: Model with home production minimized
@@ -59,6 +58,13 @@ Jekyll. Make sure to run all models before generating the documentation, in orde
 
 ## Project Structure
 
+Generate a more detailed project tree with the follwing command:
+```shell
+/bin/zsh project_tree.sh
+```
+
+Note: See the model definitions at the beginning of this document.
+
 ```markdown
 Greenwood_1993.prj                      # Matlab project file
 LICENSE
@@ -95,10 +101,4 @@ models
    |-- run_models.m                     # Matlab file to run all models and functions
 prepare_docs.sh                         # Bash file to prepare files for documentation website
 resources                               # Matlab Project files
-```
-Note: See the model definitions at the beginning of this document.
-
-Generate a more detailed project tree with the follwing command:
-```shell
-/bin/zsh project_tree.sh
 ```
