@@ -58,7 +58,7 @@ Jekyll. Make sure to run all models before generating the documentation, in orde
 
 ## Project Structure
 
-Generate a more detailed project tree with the follwing command:
+Generate a more detailed project tree with the follwing command (only works with Git):
 ```shell
 /bin/zsh project_tree.sh
 ```
