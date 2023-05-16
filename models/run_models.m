@@ -16,7 +16,6 @@ dynare Model1_level
 % Model with home production minimized
 
 CleanUp;
-
 dynare Model1_log
 
 %% Run Model 2 (deflated + levels)
