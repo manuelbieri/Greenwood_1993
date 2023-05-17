@@ -29,7 +29,7 @@ Additional models (not included in Greenwood et al., 1993):
 - Dynare (>=5.3)
 - Jekyll (>=4.2), for documentation only
 
-Otherwise, the code might (partly) not work. Additionally, the code and scripts are tested on macOS 13.3.
+Otherwise, the code might (partly) not work. Additionally, the code and scripts are tested on macOS 13.3 and Windows 11 (ARM).
 
 ## Run Code
 
