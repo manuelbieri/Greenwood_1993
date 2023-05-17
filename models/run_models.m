@@ -1,6 +1,7 @@
 %% Add Functions and Dynare to environment
 % Make sure the working directory is set to: project_path/models
 addpath Functions/
+% Add dynare (default path: dynare v5.3 on macos v13.3)
 AddDynare % Add path to Dynare as argument if necessary
 
 %% Clear environment
