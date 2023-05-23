@@ -7,8 +7,8 @@ Dynare outputs and formal model definitions on [manuelbieri.ch/Greenwood_1993/](
 - [Models](#models)
 - [Dependencies](#dependencies)
 - [Run Code](#run-code)
-- [Generate Docs](#generate-docs)
 - [Project Structure](#project-structure)
+- [Docs](#docs)
 
 ## Models
 
@@ -27,9 +27,8 @@ Additional models (not included in Greenwood et al., 1993):
 ## Dependencies
 - Matlab (>=2021b)
 - Dynare (>=5.3)
-- Jekyll (>=4.2), for documentation only
 
-Otherwise, the code might (partly) not work. Additionally, the code and scripts are tested on macOS 13.3 and Windows 11 (ARM).
+Otherwise, the code might (partly) not work. The code and scripts are tested on macOS 13.3 and Windows 11 (ARM).
 
 ## Run Code
 
@@ -49,16 +48,9 @@ cd models
 ```
 Note: You may need to adjust the path to matlab.
 
-## Generate Docs
-```shell
-/bin/zsh prepare_docs.sh
-```
-After running this shell-file, the docs-directory will contain a webpage with the latest outputs, which can be served with
-Jekyll. Make sure to run all models before generating the documentation, in order to mirror the latest changes.
-
 ## Project Structure
 
-Generate a more detailed project tree with the follwing command (only works with Git):
+Generate a more detailed project tree with the following command (only works with Git):
 ```shell
 /bin/zsh project_tree.sh
 ```
@@ -72,14 +64,14 @@ README.md
 docs                                    # Files for the documentation website
 models
    |-- Files                            # Output directory for graphs
-   |-- Functions                        # Matlab Functions used in run_models.m
+   |-- Functions                        # Matlab functions used in run_models.m
    |   |-- AddDynare.m                      # Add dynare path to project path
    |   |-- CleanUp.m                        # Cleans up whole matlab environment
    |   |-- GenerateIRFPlot.m                # Generate graph with interesting IRFs
    |   |-- GenerateTable.m                  # Replicate table in Greenwood et al. (1993)
    |   |-- SaveMoments.m                    # Helper function for GenerateTable.m
    |-- Hooks                            # Components for dynare models (reusable)
-   |   |-- Initval                          # Inital guess components
+   |   |-- Initval                          # Initial guess components
    |   |   |-- level.mod                        # Steady state for level models
    |   |   |-- log.mod                          # Steady state for log models
    |   |-- Run.mod                          # Run instructions for Dynare
@@ -100,5 +92,16 @@ models
    |-- Replication_Effects_Home_RBC.csv # Replicated table of Greenwood et al. (1993)
    |-- run_models.m                     # Matlab file to run all models and functions
 prepare_docs.sh                         # Bash file to prepare files for documentation website
-resources                               # Matlab Project files
+resources                               # Matlab project files
+```
+
+## Docs
+```shell
+/bin/zsh prepare_docs.sh
+```
+After running this shell-file, the docs-directory will contain a webpage with the latest outputs, which can be served with
+Jekyll. Make sure to run all models before generating the documentation, in order to mirror the latest changes. Finally, to locally generate the website, install [Ruby and Jekyll](https://jekyllrb.com/docs/) and run the following commands from the project root in the terminal:
+```shell
+cd docs
+bundle exec jekyll serve
 ```
