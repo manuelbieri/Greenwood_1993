@@ -13,6 +13,8 @@ Preprocessing completed.
 
     "The numbering of the equations is referenced to the P&P solutions."
 
+    "Manuel Bieri and Michael Wagner (2023)"
+
     "Replace (93) with (146) for steady state calculation"
 
 
@@ -223,4 +225,4 @@ y                44.86             48.63             93.50
 T                45.00             48.49             93.49
 Note: numbers do not add up to 100 due to non-zero correlation of simulated shocks in small samples
 
-Total computing time : 0h00m18s
+Total computing time : 0h00m23s
