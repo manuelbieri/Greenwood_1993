@@ -46,7 +46,7 @@ Open the command line with at the project root and run the following commands.
 cd models
 /Applications/MATLAB_R2021b.app/bin/matlab -nodesktop -nosplash -r "run_models"
 ```
-Note: You may need to adjust the path to matlab.
+Note: You may need to adjust the path to matlab (in the previous command) or dynare (in the file "run_models.m").
 
 ## Project Structure
 
