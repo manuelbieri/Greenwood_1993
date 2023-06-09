@@ -65,15 +65,16 @@ for j=1:2
                 plot(irf.y_em);
             end
         end
+        % add zero line
+        yline(0)
+
+        % set ticks
         ytickformat('%.3f')
         ax = gca;
         ax.YAxis.Exponent = 0;
     end
     hold off
     end
-
-    % add zero line
-    yline(0)
 
     % add legend
     leg = legend("Model 1", "Model 2", "Model 3", "Model 4", Location="north");
