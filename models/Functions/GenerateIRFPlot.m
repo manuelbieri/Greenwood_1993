@@ -69,9 +69,11 @@ for j=1:2
         ax = gca;
         ax.YAxis.Exponent = 0;
     end
-    % set subplot legend
     hold off
     end
+
+    % add zero line
+    yline(0)
 
     % add legend
     leg = legend("Model 1", "Model 2", "Model 3", "Model 4", Location="north");
@@ -81,9 +83,9 @@ for j=1:2
     % save plot to image
     switch j
     case 1
-        exportgraphics(gcf,'Files/irfs_eh.png','Resolution',300);
+        exportgraphics(gcf,'Files/irfs_eh.pdf');
     otherwise
-        exportgraphics(gcf,'Files/irfs_em.png','Resolution',300);
+        exportgraphics(gcf,'Files/irfs_em.pdf');
     end
 end
 end
