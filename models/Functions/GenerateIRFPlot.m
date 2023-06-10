@@ -66,7 +66,7 @@ for j=1:2
             end
         end
         % add zero line
-        yline(0)
+        yline(0,'HandleVisibility','off')
 
         % set ticks
         ytickformat('%.3f')
@@ -81,7 +81,7 @@ for j=1:2
     leg.Title.String = 'Legend';
     leg.Layout.Tile = 'east';
 
-    % save plot to image
+    % save plot to pdf
     switch j
     case 1
         exportgraphics(gcf,'Files/irfs_eh.pdf');
