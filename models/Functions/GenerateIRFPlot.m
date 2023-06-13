@@ -66,7 +66,7 @@ for j=1:2
             end
         end
         % add zero line
-        yline(0,'HandleVisibility','off')
+        yline(0,'HandleVisibility','off','linewidth',0.0001)
 
         % set ticks
         ytickformat('%.3f')
